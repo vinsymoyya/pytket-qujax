@@ -3,6 +3,16 @@
 Changelog
 ~~~~~~~~~
 
+Unreleased
+----------
+
+* Preserve circuit qubit ordering when converting custom registers, sparse
+  indices, and multidimensional identifiers to simulator wires.
+* Use JAX operations for nonlinear symbolic gate parameters so compiled
+  simulation and automatic differentiation remain supported.
+* Respect an explicitly empty symbol map: embed fixed gate parameters and
+  reject circuits with unmapped symbols.
+
 0.22.0 (January 2026)
 ---------------------
 
